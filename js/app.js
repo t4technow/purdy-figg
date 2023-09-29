@@ -15,6 +15,12 @@ class Slider {
 			this.goToSlide(this.currentIndex + 1);
 		});
 
+		window.addEventListener("resize", () => {
+			this.currentIndex = 0;
+			this.updateSlider();
+			this.updateButtonStates();
+		});
+
 		// Initial setup
 		this.updateSlider();
 		this.updateButtonStates();

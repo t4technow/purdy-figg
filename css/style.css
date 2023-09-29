@@ -672,6 +672,10 @@ header {
 		display: none;
 	}
 
+	.faqs.p-5 {
+		padding: 0 0 1.5rem 0 !important;
+	}
+
 	.question {
 		margin-bottom: 0.5rem !important;
 	}
