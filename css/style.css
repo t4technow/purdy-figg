@@ -327,7 +327,7 @@ header {
 
 @media (max-width: 768px) {
 	.hero {
-		height: calc(90vh - 62px);
+		height: calc(96vh - 62px);
 	}
 	.banner-image {
 		background-image: url(../assets/images/hero-mobile.webp);
