@@ -6,7 +6,7 @@
 		url("../assets/fonts/Value\ Serif\ Pro\ Regular.woff2") format("woff2"),
 		url("../assets/fonts/Value\ Serif\ Pro\ Regular.woff") format("woff"),
 		url("../assets/fonts/Value\ Serif\ Pro\ Regular.ttf") format("truetype");
-	font-display: swap;
+	font-display: fallback;
 }
 
 @font-face {
