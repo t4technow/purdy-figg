@@ -265,6 +265,18 @@ header {
 	height: 20px;
 }
 
+.get-btn svg {
+	position: absolute;
+	right: 11.3%;
+	bottom: 53%;
+}
+
+.get-btn button {
+	position: absolute;
+	right: 7%;
+	bottom: 64%;
+}
+
 .scroll-down {
 	background-color: var(--color-primary);
 	border-radius: 50%;
@@ -291,6 +303,19 @@ header {
 		right: calc(11.3% + 55px);
 		top: calc(28% + 110px);
 	}
+
+	.get-btn svg {
+		position: absolute;
+		right: 11.3%;
+		bottom: 26%;
+	}
+	.get-btn button {
+		right: 8%;
+		bottom: 34%;
+		max-width: 116px;
+		line-height: 1;
+		padding-inline: 0.75rem !important;
+	}
 }
 
 @media (max-width: 492px) {
@@ -306,6 +331,17 @@ header {
 	}
 	.hero .reviews {
 		justify-content: center;
+	}
+
+	.get-btn svg {
+		position: absolute;
+		right: 22.3%;
+		bottom: 26%;
+	}
+
+	.get-btn button {
+		right: 8%;
+		bottom: 31%;
 	}
 }
 
