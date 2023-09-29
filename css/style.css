@@ -88,6 +88,10 @@ hr {
 	color: #3d5065 !important;
 }
 
+.btn:active {
+	border: none;
+}
+
 .slider-container {
 	overflow: hidden;
 	position: relative;
