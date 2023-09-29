@@ -88,6 +88,10 @@ hr {
 	color: #3d5065 !important;
 }
 
+.btn {
+	font-weight: 600;
+}
+
 .btn:active {
 	border: none;
 }
@@ -495,8 +499,8 @@ header {
 	width: 18px;
 }
 
-.compare tr:nth-child(even) th,
-.compare tr:nth-child(even) td {
+.compare tbody tr:nth-child(odd) th,
+.compare tbody tr:nth-child(odd) td {
 	background-color: var(--color-secondary);
 }
 
