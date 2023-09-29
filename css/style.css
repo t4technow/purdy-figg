@@ -233,6 +233,9 @@ body {
 	.navbar-offer {
 		margin: auto;
 	}
+	.offset {
+		height: 69px;
+	}
 }
 
 .navbar .btn {
