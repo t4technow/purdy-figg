@@ -105,12 +105,16 @@ hr {
 	transition: transform 0.3s ease;
 }
 
+.slider-controls,
+.slider-controls-center {
+	display: block;
+}
+
 .slider-controls {
 	position: absolute;
 	bottom: 7px;
 	left: 50%;
 	transform: translateX(-50%);
-	display: none;
 }
 
 .slider-controls-center {
@@ -383,10 +387,6 @@ header {
 	font-size: 18px;
 	font-weight: 600;
 }
-
-/* .slider-track {
-	overflow: hidden;
-} */
 
 .testimonial .slider-track {
 	gap: 1rem;
@@ -716,7 +716,8 @@ header {
 		width: 100% !important;
 	}
 
-	.slider-controls {
+	.slider-controls,
+	.slider-controls-center {
 		display: block;
 	}
 }
