@@ -676,9 +676,14 @@ header {
 }
 
 @media (max-width: 492px) {
+	.pros .slider-container {
+		margin-right: -1.4rem;
+	}
+
 	.compare .slide.px-4 {
 		padding-inline: 0.5rem !important;
 	}
+
 	.sm-none {
 		display: none;
 	}
