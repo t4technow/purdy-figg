@@ -165,20 +165,39 @@ hr {
 	clip: rect(
 		1px 1px 1px 1px
 	); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-	clip: rect(
-		1px,
-		1px,
-		1px,
-		1px
-	); /*maybe deprecated but we need to support legacy browsers */
-	clip-path: inset(
-		50%
-	); /*modern browsers, clip-path works inwards from each corner*/
+	clip: rect(1px, 1px, 1px, 1px); /* support legacy browsers */
+	clip-path: inset(50%); /*modern browsers, clip-path inwards from each corner*/
 	white-space: nowrap;
 }
 
 .offset {
 	height: 72px;
+}
+
+.slider-track.scroll,
+.pros .slide .data {
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE and Edge */
+}
+
+.slider-track.scroll {
+	overflow: auto;
+	scroll-snap-type: x mandatory;
+}
+
+.slide {
+	scroll-snap-align: start;
+}
+
+/* Hide scrollbar in Chrome, Safari */
+.scroll::-webkit-scrollbar,
+.pros .slide .data::-webkit-scrollbar {
+	display: none;
+}
+
+.scroll::-webkit-scrollbar-thumb,
+.pros .slide .data::-webkit-scrollbar-thumb {
+	display: none;
 }
 
 body {
@@ -380,10 +399,6 @@ header {
 	margin-inline: auto;
 }
 
-/* .benefits {
-	font-family: "pier-sans";
-} */
-
 .benefits .logo {
 	width: 120px;
 }
@@ -532,6 +547,7 @@ header {
 
 .accordion-button {
 	color: #3d5065;
+	font-size: 14px;
 	font-weight: 600;
 	background-color: var(--color-secondary);
 	padding-inline: 0;
@@ -583,6 +599,10 @@ header {
 
 	.pros .slide img {
 		margin-inline: 0 !important;
+	}
+
+	.pros .slide .data {
+		overflow: auto;
 	}
 
 	.pros .slide .sub-title-secondary,
@@ -648,6 +668,13 @@ header {
 	.compare .slide.px-4 {
 		padding-inline: 0.5rem !important;
 	}
+	.sm-none {
+		display: none;
+	}
+
+	.question {
+		margin-bottom: 0.5rem !important;
+	}
 }
 
 @media (max-width: 768px) {
@@ -664,6 +691,10 @@ header {
 	.pb-5,
 	.sm-pb-5 {
 		padding-bottom: 1.5rem !important;
+	}
+
+	.sm-pt-5 {
+		padding-top: 1.5rem;
 	}
 
 	h3.section-title-small.w-75 {
