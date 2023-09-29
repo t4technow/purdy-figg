@@ -146,6 +146,11 @@ hr {
 	outline: none;
 	border: none;
 }
+
+.text {
+	font-family: var(--font-primary);
+}
+
 body {
 	font-family: var(--font-primary);
 	letter-spacing: 0.5px;
