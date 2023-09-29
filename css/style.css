@@ -110,16 +110,19 @@ hr {
 	top: 50%;
 	left: 0;
 	right: 0;
+}
+
+.slider-controls-center .next-btn,
+.slider-controls-center .prev-btn {
+	position: absolute;
 	transform: translateY(-50%);
 }
 
 .slider-controls-center .next-btn {
-	position: absolute;
 	right: -8px;
 }
 
 .slider-controls-center .prev-btn {
-	position: absolute;
 	left: -8px;
 }
 
