@@ -6,7 +6,7 @@
 		url("../assets/fonts/Value\ Serif\ Pro\ Regular.woff2") format("woff2"),
 		url("../assets/fonts/Value\ Serif\ Pro\ Regular.woff") format("woff"),
 		url("../assets/fonts/Value\ Serif\ Pro\ Regular.ttf") format("truetype");
-	font-display: fallback;
+	font-display: swap;
 }
 
 @font-face {
@@ -377,7 +377,7 @@ header {
 	flex-direction: row-reverse;
 }
 
-.ad-content .text {
+.add-content .text {
 	font-weight: 600;
 	text-align: justify;
 	font-size: 17px;
@@ -488,8 +488,8 @@ header {
 }
 
 @media (max-width: 1024px) {
-	.ad-content,
-	.ad-image.px-5 {
+	.add-content,
+	.add-image.px-5 {
 		padding-inline: 0 !important;
 	}
 }
@@ -556,11 +556,11 @@ header {
 		margin-bottom: 1rem !important;
 	}
 
-	.transform .ad-image {
+	.transform .add-image {
 		padding: 0 !important;
 	}
 
-	.transform .ad-content .text {
+	.transform .add-content .text {
 		margin-bottom: 0 !important;
 	}
 
