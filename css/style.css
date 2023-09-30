@@ -419,6 +419,11 @@ header {
 	background-color: #effaff;
 	text-transform: capitalize;
 }
+
+.product-showcase .slider-controls-center {
+	display: block;
+}
+
 .product-image {
 	object-fit: cover;
 }
