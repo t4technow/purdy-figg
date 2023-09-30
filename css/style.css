@@ -107,7 +107,7 @@ hr {
 
 .slider-controls,
 .slider-controls-center {
-	display: block;
+	display: none;
 }
 
 .slider-controls {
